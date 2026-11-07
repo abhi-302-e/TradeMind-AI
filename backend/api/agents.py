@@ -145,3 +145,4 @@ def trigger_agent(agent_code: str, symbol: str = "RELIANCE.NS"):
 
     res = agent.run(symbol, {})
     return res.model_dump()
+

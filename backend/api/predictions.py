@@ -29,3 +29,4 @@ def get_prediction_scenarios(symbol: str):
         "evidence": pred_res.evidence,
         "warnings": pred_res.warnings
     }
+

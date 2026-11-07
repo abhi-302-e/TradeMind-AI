@@ -15,3 +15,4 @@ def execute_strategy_backtest(req: BacktestRequest):
         take_profit_pct=req.take_profit_pct
     )
     return BacktestResponse(**result)
+

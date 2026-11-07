@@ -117,3 +117,4 @@ const FundamentalAnalysis = () => {
 };
 
 export default FundamentalAnalysis;
+

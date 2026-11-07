@@ -45,3 +45,4 @@ def get_trading_opportunities():
         "count": len(opportunities),
         "opportunities": opportunities
     }
+

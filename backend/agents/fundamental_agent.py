@@ -69,3 +69,4 @@ class FundamentalAnalysisAgent(BaseAgent):
             evidence=evidence,
             warnings=warnings
         )
+

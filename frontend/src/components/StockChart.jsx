@@ -251,3 +251,4 @@ const StockChart = ({ bars = [], symbol = 'RELIANCE.NS', currentPrice, priceChan
 };
 
 export default StockChart;
+

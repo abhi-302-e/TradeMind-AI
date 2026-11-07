@@ -179,3 +179,4 @@ class BacktestService:
             "trades": trades[-20:], # return recent 20 for preview
             "equity_curve": equity_curve[::3] # downsample for chart speed
         }
+

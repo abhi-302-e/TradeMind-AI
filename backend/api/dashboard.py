@@ -97,3 +97,4 @@ def get_dashboard_summary(db: Session = Depends(get_db)):
         "recent_news": MarketService.get_news_and_sentiment("RELIANCE.NS"),
         "timestamp": datetime.datetime.utcnow().isoformat() + "Z"
     }
+

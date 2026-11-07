@@ -95,3 +95,4 @@ def get_portfolio():
         "sector_allocation": sector_allocation,
         "diversification_score": 82.5
     }
+

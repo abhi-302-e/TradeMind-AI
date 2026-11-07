@@ -75,3 +75,4 @@ class OpportunityDetectionAgent(BaseAgent):
             evidence=evidence,
             warnings=warnings
         )
+

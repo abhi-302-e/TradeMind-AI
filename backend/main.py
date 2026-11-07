@@ -17,6 +17,8 @@ from backend.api.portfolio import router as portfolio_router
 from backend.api.paper import router as paper_router
 from backend.api.backtest import router as backtest_router
 from backend.api.reports import router as reports_router
+from backend.api.chat import router as chat_router
+from backend.api.admin import router as admin_router
 
 # Auto-create all 18 tables on startup
 Base.metadata.create_all(bind=engine)
@@ -49,6 +51,8 @@ app.include_router(portfolio_router)
 app.include_router(paper_router)
 app.include_router(backtest_router)
 app.include_router(reports_router)
+app.include_router(chat_router)
+app.include_router(admin_router)
 
 @app.get("/")
 def root():
@@ -64,3 +68,4 @@ def root():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("backend.main:app", host="0.0.0.0", port=8000, reload=True)
+

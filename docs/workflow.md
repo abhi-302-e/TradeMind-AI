@@ -92,3 +92,4 @@
 - **Simulated Paper Execution**: Slippage formula:
   $$\text{Fill Price} = \text{Market Price} \times (1 \pm \text{Slippage Rate})$$
   with transaction fee deductions of $0.05\%$.
+

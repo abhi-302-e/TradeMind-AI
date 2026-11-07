@@ -102,3 +102,4 @@ python -m pytest backend/tests/test_trademind.py -v
 
 ## ⚖️ Safety & Regulatory Disclaimer
 TradeMind AI provides quantitative analytical models, market research visualizations, and simulated paper-trading tools. It does not provide licensed financial advice, guarantee investment returns, or execute real-money broker trades. All trading signals are analytical candidate suggestions.
+

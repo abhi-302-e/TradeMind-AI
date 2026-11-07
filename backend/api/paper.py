@@ -121,3 +121,4 @@ def reset_paper_portfolio():
     PORTFOLIO_STATE["holdings"] = []
     ORDERS_HISTORY.clear()
     return {"success": True, "message": "Paper portfolio reset to ₹100,000 virtual balance."}
+

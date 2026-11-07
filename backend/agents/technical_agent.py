@@ -76,3 +76,4 @@ class TechnicalAnalysisAgent(BaseAgent):
             evidence=evidence,
             warnings=warnings
         )
+

@@ -337,3 +337,4 @@ const TechnicalAnalysis = () => {
 };
 
 export default TechnicalAnalysis;
+

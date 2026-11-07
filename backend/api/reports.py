@@ -54,3 +54,4 @@ def generate_report(symbol: str = "RELIANCE.NS"):
     }
     GENERATED_REPORTS.insert(0, new_report)
     return new_report
+

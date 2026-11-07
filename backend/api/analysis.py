@@ -12,3 +12,4 @@ def run_multi_agent_analysis(symbol: str, account_equity: float = Query(100000.0
         return report
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Analysis orchestration error: {str(e)}")
+

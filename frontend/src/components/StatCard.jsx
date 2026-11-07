@@ -50,3 +50,4 @@ const StatCard = ({ title, value, change, changePct, prefix = '', suffix = '', i
 };
 
 export default StatCard;
+

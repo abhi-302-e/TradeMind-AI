@@ -67,3 +67,4 @@ class NewsSentimentAgent(BaseAgent):
             evidence=evidence,
             warnings=warnings
         )
+

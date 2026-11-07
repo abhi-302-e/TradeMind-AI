@@ -128,3 +128,4 @@ The **Performance Monitoring Agent** maintains historical paper trade records an
 - **Persistence**: SQLAlchemy 2.0 ORM with PostgreSQL (production) and high-performance SQLite fallback (development/local).
 - **ML / Quant**: Scikit-learn, NumPy, Pandas, yfinance.
 - **Deployment**: Docker containerization & Docker Compose.
+

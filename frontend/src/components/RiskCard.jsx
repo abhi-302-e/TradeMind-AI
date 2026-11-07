@@ -74,3 +74,4 @@ const RiskCard = ({ riskScore = 42.5, riskLevel = 'MODERATE', volatility = '22.4
 };
 
 export default RiskCard;
+

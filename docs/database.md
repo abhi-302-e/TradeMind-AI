@@ -43,3 +43,4 @@ erDiagram
 16. **backtests**: `id`, `user_id`, `strategy_name`, `symbol`, `start_date`, `end_date`, `total_return_pct`, `win_rate_pct`, `max_drawdown_pct`, `sharpe_ratio`, `trades_count`, `created_at`
 17. **reports**: `id`, `user_id`, `report_type`, `title`, `content_json`, `created_at`
 18. **audit_logs**: `id`, `user_id`, `action`, `resource`, `details_json`, `ip_address`, `timestamp`
+

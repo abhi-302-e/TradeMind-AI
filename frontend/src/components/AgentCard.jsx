@@ -94,3 +94,4 @@ const AgentCard = ({ agent, onRun, isRunning }) => {
 };
 
 export default AgentCard;
+

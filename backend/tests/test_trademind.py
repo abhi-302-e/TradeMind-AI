@@ -104,3 +104,4 @@ def test_backtest_service():
     assert "win_rate_pct" in res
     assert "max_drawdown_pct" in res
     assert "sharpe_ratio" in res
+

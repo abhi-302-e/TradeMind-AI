@@ -38,3 +38,4 @@ class BaseAgent(ABC):
     @abstractmethod
     def process(self, asset: str, context: Dict[str, Any]) -> BaseAgentOutput:
         pass
+

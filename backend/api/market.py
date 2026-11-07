@@ -67,3 +67,4 @@ def get_news_sentiment(symbol: str):
         "articles": articles,
         "count": len(articles)
     }
+

@@ -45,3 +45,4 @@ def calculate_risk_parameters(req: RiskCalculationRequest):
         risk_level=risk_level,
         warnings=warnings
     )
+

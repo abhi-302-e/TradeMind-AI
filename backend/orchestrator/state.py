@@ -25,3 +25,4 @@ class TradeMindWorkflowState(BaseModel):
     composite_score: float = 50.0
     confidence: float = 0.5
     errors: List[str] = Field(default_factory=list)
+

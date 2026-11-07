@@ -62,3 +62,4 @@ def login(user_in: UserLoginRequest, db: Session = Depends(get_db)):
         email=user.email,
         role=user.role
     )
+
