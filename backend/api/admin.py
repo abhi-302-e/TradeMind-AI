@@ -103,3 +103,4 @@ def get_audit_trail():
         "count": len(logs),
         "logs": logs
     }
+

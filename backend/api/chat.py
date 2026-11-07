@@ -95,3 +95,4 @@ def ask_ai_assistant(req: ChatRequest):
             f"View {symbol} 5-Day ML Forecast Cone"
         ]
     )
+
