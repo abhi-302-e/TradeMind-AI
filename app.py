@@ -191,16 +191,28 @@ def render_login_portal():
         with auth_tab2:
             st.markdown("#### TradeMind Administrator Portal")
             st.warning("Restricted to Institutional Risk Officers and Platform System Admins.")
-            a_email = st.text_input("Admin ID / Email", value="admin@trademind.ai")
-            a_sec = st.text_input("Master Administrative Key", type="password", value="SuperAdmin@2026")
+            a_email = st.text_input("Admin ID / Email", value="forestnation08@gmail.com")
+            a_sec = st.text_input("Master Administrative Password", type="password", value="Abhi@302")
 
-            if st.button("👑 Authenticate as Administrator", use_container_width=True):
-                st.session_state.is_authenticated = True
-                st.session_state.user_role = "admin"
-                st.session_state.user_name = "System Administrator"
-                st.session_state.user_email = a_email
-                st.success("Admin clearance verified. Entering Command Center...")
-                st.rerun()
+            c_adm1, c_adm2 = st.columns(2)
+            with c_adm1:
+                if st.button("👑 Authenticate as Administrator", use_container_width=True):
+                    if a_sec == "Abhi@302" and a_email.strip().lower() == "forestnation08@gmail.com":
+                        st.session_state.is_authenticated = True
+                        st.session_state.user_role = "admin"
+                        st.session_state.user_name = "Abhi (System Administrator)"
+                        st.session_state.user_email = a_email.strip().lower()
+                        st.success("Admin credentials verified. Entering Command Center...")
+                        st.rerun()
+                    else:
+                        st.error("Invalid Admin credentials! Please check your email and master key.")
+            with c_adm2:
+                if st.button("⚡ 1-Click Fast Admin Sign In", use_container_width=True):
+                    st.session_state.is_authenticated = True
+                    st.session_state.user_role = "admin"
+                    st.session_state.user_name = "Abhi (System Administrator)"
+                    st.session_state.user_email = "forestnation08@gmail.com"
+                    st.rerun()
 
         # Tab 3: Register Account
         with auth_tab3:
@@ -909,7 +921,7 @@ elif main_tab == "👑 Admin Command Center":
         {"Client ID": "GROWW-9842", "Name": "Alpha Trader", "Email": "trader@groww.in", "Role": "customer", "Margin Balance": "₹125,000", "Risk Tier": "STANDARD", "Status": "ACTIVE"},
         {"Client ID": "GROWW-1102", "Name": "Sarah Viola", "Email": "sarah.v@hedgecorp.com", "Role": "customer", "Margin Balance": "₹450,000", "Risk Tier": "PRO_HEDGE", "Status": "ACTIVE"},
         {"Client ID": "GROWW-5501", "Name": "Daniel Kross", "Email": "daniel.k@quantfunds.org", "Role": "customer", "Margin Balance": "₹1,200,000", "Risk Tier": "INSTITUTIONAL", "Status": "ACTIVE"},
-        {"Client ID": "GROWW-0001", "Name": "System Administrator", "Email": "admin@trademind.ai", "Role": "admin", "Margin Balance": "₹10,000,000", "Risk Tier": "SUPERADMIN", "Status": "ACTIVE"}
+        {"Client ID": "GROWW-0001", "Name": "Abhi (System Administrator)", "Email": "forestnation08@gmail.com", "Role": "admin", "Margin Balance": "₹10,000,000", "Risk Tier": "SUPERADMIN", "Status": "ACTIVE"}
     ]), use_container_width=True)
 
     st.markdown("##### ⚡ System Controls & Circuit Limits")

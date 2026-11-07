@@ -192,11 +192,16 @@ const PaperTrading = () => {
                 className="w-full p-2.5 bg-surface-elevated border border-surface-border rounded-lg text-slate-100 font-bold focus:outline-none focus:border-primary"
               >
                 <option value="RELIANCE.NS">RELIANCE.NS (Reliance Industries)</option>
-                <option value="TCS.NS">TCS.NS (Tata Consultancy)</option>
-                <option value="INFY.NS">INFY.NS (Infosys)</option>
+                <option value="TCS.NS">TCS.NS (Tata Consultancy Services)</option>
+                <option value="INFY.NS">INFY.NS (Infosys Ltd)</option>
                 <option value="HDFCBANK.NS">HDFCBANK.NS (HDFC Bank)</option>
+                <option value="TATAMOTORS.NS">TATAMOTORS.NS (Tata Motors)</option>
+                <option value="ICICIBANK.NS">ICICIBANK.NS (ICICI Bank)</option>
+                <option value="SBIN.NS">SBIN.NS (State Bank of India)</option>
+                <option value="ITC.NS">ITC.NS (ITC Ltd)</option>
+                <option value="ZOMATO.NS">ZOMATO.NS (Zomato Ltd)</option>
                 <option value="AAPL">AAPL (Apple Inc.)</option>
-                <option value="BTC-USD">BTC-USD (Bitcoin)</option>
+                <option value="BTC-USD">BTC-USD (Bitcoin / USD)</option>
               </select>
             </div>
 
