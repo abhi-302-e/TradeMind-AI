@@ -8,7 +8,7 @@
 
 TradeMind AI is an institutional-grade, full-stack financial market intelligence and simulated paper-trading platform. It orchestrates **ten specialized autonomous AI agents** governed by a stateful directed execution graph to ingest market feeds, compute technical indicators, analyze fundamentals, score financial headlines, detect asymmetric opportunities, forecast forward price cones, and enforce risk budgeting.
 
----
+-----------
 
 ## 🏛️ System Architecture
 
